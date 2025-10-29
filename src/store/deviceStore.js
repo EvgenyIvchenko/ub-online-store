@@ -5,10 +5,14 @@ const createDeviceStore = () => {
     types: [
       { id: 1, name: 'Холодильники' },
       { id: 2, name: 'Смартфоны' },
+      { id: 3, name: 'Ноутбуки' },
+      { id: 4, name: 'Телевизоры' },
     ],
     brands: [
       { id: 1, name: 'Samsung' },
       { id: 2, name: 'Apple' },
+      { id: 3, name: 'Lenovo' },
+      { id: 4, name: 'Asus' },
     ],
     devices: [
       {
@@ -40,6 +44,8 @@ const createDeviceStore = () => {
         img: 'https://www.purposechurch.com/wp-content/uploads/2017/10/fpo400x300.png',
       },
     ],
+    selectedType: {},
+    selectedBrand: {},
 
     setTypes(types) {
       this.types = types;
@@ -49,6 +55,12 @@ const createDeviceStore = () => {
     },
     setDevices(devices) {
       this.devices = devices;
+    },
+    setSelectedType(type) {
+      this.selectedType = type;
+    },
+    setSelectedBrand(brand) {
+      this.selectedBrand = brand;
     },
   });
 };

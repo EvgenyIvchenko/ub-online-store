@@ -1,19 +1,11 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { userStore } from 'store/userStore';
-import { deviceStore } from 'store/deviceStore';
-
-export const Context = createContext(null);
+import { AppContext } from 'Context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Context.Provider
-    value={{
-      user: userStore,
-      device: deviceStore,
-    }}
-  >
+  <AppContext>
     <App />
-  </Context.Provider>
+  </AppContext>
 );
