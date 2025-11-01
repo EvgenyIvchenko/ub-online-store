@@ -1,6 +1,6 @@
 import { useAppContext } from 'Context';
 import { observer } from 'mobx-react-lite';
-import { Card, Row } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 const BrandBar = observer(() => {
   const { device } = useAppContext();

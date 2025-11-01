@@ -1,4 +1,5 @@
 import BrandBar from 'components/BrandBar';
+import DeviceList from 'components/DeviceList';
 import TypeBar from 'components/TypeBar';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -12,6 +13,7 @@ const Shop = () => {
         </Col>
         <Col md={9}>
           <BrandBar />
+          <DeviceList />
         </Col>
       </Row>
     </Container>
