@@ -2,7 +2,7 @@ import { makeAutoObservable } from 'mobx';
 
 const createUserStore = () => {
   return makeAutoObservable({
-    isAuth: false,
+    isAuth: true,
     user: {},
 
     setIsAuth(bool) {
